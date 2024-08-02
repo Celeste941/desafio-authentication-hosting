@@ -70,7 +70,7 @@ La aplicación incluye:
     npm run serve
     ```
 
-    La aplicación estará disponible en [https://crearproyecto-50152.web.app](https://crearproyecto-50152.web.app)
+    La aplicación estará disponible en [https://authentication-hosting-fce64.web.app](https://authentication-hosting-fce64.web.app)
 
 
 2. **Compila la aplicación para producción:**
