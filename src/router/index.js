@@ -34,12 +34,12 @@ const router = createRouter({
 router.beforeEach((to, from, next) => {
   if (to.matched.some((route) => route.meta.isAuthRequired)) {
     if (!store.state.loggedUser) {
-      next("/"); // Te redirijo a la ruta raíz si no hay usuario logueado
+      next("/"); 
     } else {
-      next(); // Si en el estado global hay un usuario logueado, te envío a la ruta deseada
+      next();
     }
   } else {
-    next(); // Si la ruta a la que voy no tiene meta login, voy a esa ruta sin problemas
+    next();
   }
 });
 

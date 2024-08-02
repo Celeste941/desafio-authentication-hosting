@@ -1,5 +1,5 @@
 import { createStore } from "vuex";
-import { auth, signInWithEmailAndPassword, signOut } from "../config/firebaseConfig.js"; // Asegúrate de importar signOut
+import { auth, signInWithEmailAndPassword, signOut } from "../config/firebaseConfig.js";
 import router from "@/router/index.js";
 
 export default createStore({
@@ -18,7 +18,6 @@ export default createStore({
         commit("setLoggedUser", loginResponse.user);
         router.push("/home");
       } catch (error) {
-        // Lanzar el error para que el componente pueda manejarlo
         throw new Error('Email o contraseña incorrectos');
       }
     },
